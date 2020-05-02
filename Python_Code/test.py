@@ -1,9 +1,9 @@
 
 """
-================================================================================
-Reinforcement Learning (Q-learning, Double Q-learning, Dyna-Q with probabilistic
+=================================================================================
+Reinforcement Learning, Q-learning, Double Q-learning, Dyna-Q (with probabilistic
 and deterministic models)
-================================================================================
+=================================================================================
 
 References
 ==========
