@@ -51,12 +51,13 @@
 
 All examples are for the map layout in `map.csv`. All initial data are as in *test.py* except when differently specified.
 
-- `Basic Q-learning, episodes = 1000, dyna = 0`
+- Basic Q-learning, episodes = 1000, dyna = 0
 
+```
 REWARDS:   mean =  -63.1, median =  -32.0, std = 109.8
 STEPS:     mean =   62.1, median =   34.0, std =  96.3
 Number of updates done:  62085
-```
+
 # # # # # # # # # # # # # # #
 #                           #
 # S             ~ ~         #
@@ -70,9 +71,9 @@ Number of updates done:  62085
 #     # # #                 #
 #               # #         #
 # # # # # # # # # # # # # # #
-```
-BEST PATH: rewards = -22.0, Steps =  24.0
 
+BEST PATH: rewards = -22.0, Steps =  24.0
+```
 
 - Double Q-learning, episodes = 1000, dyna = 0
 
