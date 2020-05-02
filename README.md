@@ -1,4 +1,4 @@
-# Reinforcement Learning (Q-learning, Double Q-learning, Dyna-Q with probabilistic and deterministic models)
+# Reinforcement Learning, Q-learning, Double Q-learning, Dyna-Q (with probabilistic and deterministic models)
 
 ## Reference
 
@@ -148,7 +148,7 @@ Number of updates skipped:  205103
 BEST PATH: rewards = -22.0, Steps =  24.0
 ```
 
-- Basic Q-learning, episodes = 1000, dyna = 0, but using an 8-way robot
+- Basic Q-learning, episodes = 1000, dyna = 0, using an 8-way robot
 
 ```
 REWARDS:   mean =  -66.6, median =  -25.0, std = 120.9
