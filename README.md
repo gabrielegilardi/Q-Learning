@@ -77,7 +77,7 @@ BEST PATH: rewards = -22.0, Steps =  24.0
 
 - Double Q-learning, episodes = 1000, dyna = 0
 
-```python
+```
 REWARDS:   mean =  -85.0, median =  -40.0, std = 132.7
 STEPS:     mean =   85.5, median =   42.0, std = 130.5
 Number of updates done:  85473
@@ -101,7 +101,7 @@ BEST PATH: rewards = -22.0, Steps =  24.0
 
 - Double Q-learning, episodes = 50, dyna = 200, model_type = 1
 
-```python
+```
 REWARDS:   mean =  -70.7, median =  -28.0, std = 158.5
 STEPS:     mean =   52.9, median =   30.0, std =  93.5
 Number of updates done:  531243
@@ -125,7 +125,7 @@ BEST PATH: rewards = -22.0, Steps =  24.0
 
 - Basic Q-learning, episodes = 50, dyna = 200, model_type = 4
 
-```python
+```
 REWARDS:   mean =  -92.7, median =  -42.5, std = 183.9
 STEPS:     mean =   76.9, median =   44.5, std =  94.5
 Number of updates done:  567340
@@ -150,7 +150,7 @@ BEST PATH: rewards = -22.0, Steps =  24.0
 
 - Basic Q-learning, episodes = 1000, dyna = 0, but using an 8-way robot
 
-```python
+```
 REWARDS:   mean =  -66.6, median =  -25.0, std = 120.9
 STEPS:     mean =   63.3, median =   27.0, std = 100.1
 Number of updates done:  63261
