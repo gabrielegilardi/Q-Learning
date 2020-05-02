@@ -3,7 +3,7 @@
 ## Reference
 
 - Sutton and Barto's book "[Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html)"
-- [project 7](http://quantsoftware.gatech.edu/Spring_2020_Project_7:_Qlearning_Robot) in the Georgia Tech Spring 2020 course [Machine Learning for Trading](http://quantsoftware.gatech.edu/CS7646_Spring_2020) by Prof. Tucker Balch.
+- [Project 7](http://quantsoftware.gatech.edu/Spring_2020_Project_7:_Qlearning_Robot) in the Georgia Tech Spring 2020 course [Machine Learning for Trading](http://quantsoftware.gatech.edu/CS7646_Spring_2020) by Prof. Tucker Balch.
 
 ## Characteristics
 
@@ -14,7 +14,7 @@
 - The deterministic model and probabilistic model have both two versions, one using dictionaries (less memory but slower) and one using arrays (more memory but faster).
 - Double Q-learning can be used with basic Q-learning as well as with Dyna-Q.
 - The Q-learning class in *QLearner.py* can be used for any reinforcement learning problem, while *robot.py* and *test.py* are specific for a grid-world type problem (i.e. finding the best policy to go from a start point to a goal point).
-- Note: states must be unique integers in the interval `(0,num_states)`, action must be unique integers in the interval `(0,num_actions)`, and all states must have all the actions.
+- Note: states must be unique integers in the interval `(0,num_states)`, actions must be unique integers in the interval `(0,num_actions)`, and all states must have all the actions.
 - Usage: *python test.py csv-filename*.
 
 ## Parameters
@@ -43,7 +43,7 @@
 
 `dyna` Number of simulated updates in Dyna-Q (when equal to zero Dyna-Q is not used).
 
-`model_type` Type of model used for the simulation in Dyna (1-2 are deterministic models, 3-4 are probabilistic models).
+`model_type` Type of model used for the simulation in Dyna-Q (1-2 are deterministic models, 3-4 are probabilistic models).
 
 `double_Q` Specifies if double Q-learning is used (to avoid maximization bias).
 
@@ -51,13 +51,12 @@
 
 All examples are for the map layout in `map.csv`. All initial data are as in *test.py* except when differently specified.
 
-- Basic Q-learning, episodes = 1000, dyna = 0
+- `Basic Q-learning, episodes = 1000, dyna = 0`
 
-```python
 REWARDS:   mean =  -63.1, median =  -32.0, std = 109.8
 STEPS:     mean =   62.1, median =   34.0, std =  96.3
 Number of updates done:  62085
-
+```
 # # # # # # # # # # # # # # #
 #                           #
 # S             ~ ~         #
@@ -71,11 +70,11 @@ Number of updates done:  62085
 #     # # #                 #
 #               # #         #
 # # # # # # # # # # # # # # #
-
-BEST PATH: rewards = -22.0, Steps =  24.0
 ```
+BEST PATH: rewards = -22.0, Steps =  24.0
 
-- Double Q learning, episodes = 1000, dyna = 0
+
+- Double Q-learning, episodes = 1000, dyna = 0
 
 ```python
 REWARDS:   mean =  -85.0, median =  -40.0, std = 132.7
