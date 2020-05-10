@@ -1,11 +1,11 @@
-
 """
 Robot class for a grid-world navigation problem.
+
+(c) 2020 Gabriele Gilardi
 """
 
 import sys
 import numpy as np
-
 
 class robot:
 

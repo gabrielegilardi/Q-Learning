@@ -1,12 +1,11 @@
-
 """
-=================================================================================
 Reinforcement Learning, Q-learning, Double Q-learning, Dyna-Q (with probabilistic
 and deterministic models)
-=================================================================================
+
+(c) 2020 Gabriele Gilardi
 
 References
-==========
+----------
 - Based on project 7 in the Georgia Tech Spring 2020 course "Machine Learning
   for Trading" by Prof. Tucker Balch.
 - Course: http://quantsoftware.gatech.edu/CS7646_Spring_2020
@@ -15,7 +14,7 @@ References
   (http://incompleteideas.net/book/the-book-2nd.html)
 
 Characteristics
-===============
+---------------
 - The code has been written and tested in Python 3.7.7.
 - Q-learning implementation for reinforcement learning problems.
 - Options: basic Q-learning, Dyna-Q (for model planning), double Q-learning (to
@@ -32,7 +31,7 @@ Characteristics
 - Usage: python test.py <csv-filename>.
 
 Parameters
-===============
+----------
 sys.argv[1]
     File name with the map layout passed as argument. It must be in a csv file,
     with the map elements specified using integer numbers.
@@ -68,7 +67,7 @@ double_Q = True, False
     Specifies if double Q-learning is used (to avoid maximization bias).
 
 Examples
-========
+--------
 All examples are for the map layout in `map.csv`. All initial data are as in this
 file, except when differently specified.
 
