@@ -1,7 +1,7 @@
 """
 QLearner class for reinforcement learning using Q-table(s)
 
-(c) 2020 Gabriele Gilardi
+Copyright (c) 2020 Gabriele Gilardi
 
 Notes:
 - states must be unique integers in the interval (0,num_states)

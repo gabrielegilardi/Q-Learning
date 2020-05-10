@@ -2,7 +2,7 @@
 Reinforcement Learning, Q-learning, Double Q-learning, Dyna-Q (with probabilistic
 and deterministic models)
 
-(c) 2020 Gabriele Gilardi
+Copyright (c) 2020 Gabriele Gilardi
 
 References
 ----------

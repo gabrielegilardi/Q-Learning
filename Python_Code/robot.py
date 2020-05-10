@@ -1,7 +1,7 @@
 """
 Robot class for a grid-world navigation problem.
 
-(c) 2020 Gabriele Gilardi
+Copyright (c) 2020 Gabriele Gilardi
 """
 
 import sys
