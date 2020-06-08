@@ -70,7 +70,7 @@ class QLearner:
 
     def action(self, s):
         """
-        Return an action using epsilon-greedy
+        Returns an action using epsilon-greedy
         """
         # Exploration
         if (np.random.uniform(0.0, 1.0) < self.rar):
@@ -91,7 +91,7 @@ class QLearner:
 
     def Q_learning(self, s, a, s_prime, r):
         """
-        Manage the different Q-learning options
+        Manages the different Q-learning options
         """
         # Update Q-table(s) (direct reinforcement learning)
         self.update_Q(s, a, s_prime, r)
@@ -117,7 +117,7 @@ class QLearner:
 
     def update_Q(self, s, a, s_prime, r):
         """
-        Update Q-table(s)
+        Updates Q-table(s)
         """
         self.count_update_Q += 1
 
@@ -143,7 +143,7 @@ class QLearner:
 
     def model1_deterministic(self, s, a, s_prime, r):
         """
-        Simulate as deterministic model (T and R defined as dictionaries)
+        Simulates as deterministic model (T and R defined as dictionaries)
         """
         # Add <new state,reward> to the model as the result of <state,action>
         if (s not in self.TR.keys()):
@@ -169,7 +169,7 @@ class QLearner:
 
     def model2_deterministic(self, s, a, s_prime, r):
         """
-        Simulate as deterministic model (T and R defined as arrays)
+        Simulates as deterministic model (T and R defined as arrays)
         """
         # Add <new state,reward> to the model as the result of <state,action>
         self.T[s, a] = s_prime
@@ -199,7 +199,7 @@ class QLearner:
 
     def model3_probabilistic(self, s, a, s_prime, r):
         """
-        Simulate as probabilistic model (T and R defined as dictionaries)
+        Simulates as probabilistic model (T and R defined as dictionaries)
         """
         # Add <new state,reward> to the model as the result of <state,action>
         if (s not in self.T.keys()):
@@ -234,7 +234,7 @@ class QLearner:
 
     def model4_probabilistic(self, s, a, s_prime, r):
         """
-        Simulate as probabilistic model (T and R defined as arrays)
+        Simulates as probabilistic model (T and R defined as arrays)
         """
         # Add <new state,reward> to the model as the result of <state,action>
         self.T[s, a, s_prime] += 1
@@ -265,7 +265,7 @@ class QLearner:
 
     def best_action(self, s):
         """
-        Return the best action for the specified state (greedy)
+        Returns the best action for the specified state (greedy)
         """
         # Double Q-learning
         if (self.double_Q):
