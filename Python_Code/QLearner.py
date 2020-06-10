@@ -1,5 +1,5 @@
 """
-QLearner class for reinforcement learning using Q-table(s)
+QLearner class for reinforcement learning using Q-table(s).
 
 Copyright (c) 2020 Gabriele Gilardi
 
