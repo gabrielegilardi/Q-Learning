@@ -32,7 +32,7 @@ class robot:
 
     def show_map(self, layout):
         """
-        Shows the map layout
+        Shows the map layout.
 
         0 = " " = empty space
         1 = "#" = wall/obstacle
@@ -58,7 +58,7 @@ class robot:
 
     def start_pos(self):
         """
-        Returns the start position "S" as [row,col]
+        Returns the start position "S" as [row,col].
         """
         for row in range(self.n_rows):
             for col in range(self.n_cols):
@@ -69,7 +69,7 @@ class robot:
 
     def goal_pos(self):
         """
-        Returns the goal position "G" as [row,col]
+        Returns the goal position "G" as [row,col].
         """
         for row in range(self.n_rows):
             for col in range(self.n_cols):
@@ -81,7 +81,7 @@ class robot:
     def move(self, curr_pos, action, curr_map_layout):
         """
         Moves the robot by one step and return the new position, the reward,
-        and the updated map
+        and the updated map.
 
         curr_pos            Current robot position
         action              Action to take
@@ -129,7 +129,7 @@ class robot:
     def state(self, curr_pos):
         """
         Converts the robot current position to a unique value (state) in the
-        range from 0 to (n_rows x n_cols - 1)
+        range from 0 to (n_rows x n_cols - 1).
         """
         state = curr_pos[0] * self.n_cols + curr_pos[1]
 
@@ -138,7 +138,7 @@ class robot:
     def optimize_path(self, learner, episodes=500):
         """
         Finds the optimal path from start to goal position using Q-learning
-        and returns total rewards and number of steps for each episode
+        and returns total rewards and number of steps for each episode.
         """
         # Get start (current) and goal position
         start_pos = self.start_pos()
@@ -192,7 +192,7 @@ class robot:
     def best_path(self, learner, start_pos=None):
         """
         Returns the optimal path from any start position to the goal position
-        If no start position is specified then uses the original start point
+        If no start position is specified then uses the original start point.
         """
         best_map_layout = self.map_layout.copy()
 
