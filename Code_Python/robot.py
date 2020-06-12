@@ -1,5 +1,5 @@
 """
-Robot class for a grid-world navigation problem.
+Reinforcement Learning Using Q-learning, Double Q-learning, and Dyna-Q.
 
 Copyright (c) 2020 Gabriele Gilardi
 """

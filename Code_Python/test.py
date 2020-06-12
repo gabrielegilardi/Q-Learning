@@ -1,6 +1,5 @@
 """
-Reinforcement Learning, Q-learning, Double Q-learning, Dyna-Q (with probabilistic
-and deterministic models.)
+Reinforcement Learning Using Q-learning, Double Q-learning, and Dyna-Q.
 
 Copyright (c) 2020 Gabriele Gilardi
 
@@ -16,7 +15,7 @@ References
 Characteristics
 ---------------
 - The code has been written and tested in Python 3.7.7.
-- Q-learning implementation for reinforcement learning problems.
+- Q-learning implementation for reinforcement learning.
 - Options: basic Q-learning, Dyna-Q (for model planning), double Q-learning (to
   avoid maximization bias).
 - Dyna-Q has been implemented with both a deterministic model and a probabilistic
